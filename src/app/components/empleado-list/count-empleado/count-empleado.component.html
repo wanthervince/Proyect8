@@ -1,0 +1,32 @@
+<div class="conten_input">
+  <div class="inputEmpleado">
+    <input
+      [(ngModel)]="rbtnSelect"
+      type="radio"
+      id="rAll"
+      name="countEmpleado"
+      value="ALL"
+    />
+    <label for="rAll">ALL({{ all }})</label>
+  </div>
+  <div class="inputEmpleado">
+    <input
+      [(ngModel)]="rbtnSelect"
+      type="radio"
+      id="rMen"
+      name="countEmpleado"
+      value="MAN"
+    />
+    <label for="rMen">MAN({{ man }})</label>
+  </div>
+  <div class="inputEmpleado">
+    <input
+      [(ngModel)]="rbtnSelect"
+      type="radio"
+      id="rWoman"
+      name="countEmpleado"
+      value="WOMAN"
+    />
+    <label for="rWoman">WOMAN({{ women }})</label>
+  </div>
+</div>

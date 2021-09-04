@@ -1,0 +1,32 @@
+<div class="conten_empleado">
+  <h1>LIST EMPLEADO</h1>
+  <app-count-empleado
+    [all]="countAllEmpleado()"
+    [man]="countManEmpleado()"
+    [women]="countWomanEmpleado()"
+  ></app-count-empleado>
+  <div class="table_empleado">
+    <table>
+      <thead>
+        <tr>
+          <th class="th" scope="col">Nº</th>
+          <th class="th" scope="col">NAME</th>
+          <th class="th" scope="col">LAST NAME</th>
+          <th class="th" scope="col">SEX</th>
+          <th class="th" scope="col">SALARY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let empleado of listEmpleado">
+          <tr *ngIf="rbtnSelect === 'ALL' || rbtnSelect === empleado.sex">
+            <td>{{ empleado.nro }}</td>
+            <td>{{ empleado.name }}</td>
+            <td>{{ empleado.lastname }}</td>
+            <td>{{ empleado.sex }}</td>
+            <td>{{ empleado.salary }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

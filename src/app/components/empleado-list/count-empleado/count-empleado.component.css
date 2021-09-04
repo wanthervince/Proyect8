@@ -1,0 +1,19 @@
+.conten_input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: x-large;
+  background-color: aliceblue;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputEmpleado {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.inputEmpleado > label {
+  margin: 8px;
+}
